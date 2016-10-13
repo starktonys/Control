@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="stark.tony.control.MainActivity"
+    >
+
+
+  <Button
+      android:id="@+id/btn_start_search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:text="开始扫描设备"
+      />
+
+  <Button
+      android:id="@+id/btn_end_search"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_below="@id/btn_start_search"
+      android:text="停止扫描设备"
+      />
+
+
+  <ImageView
+      android:id="@+id/iv_back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginBottom="39dp"
+      android:layout_marginEnd="31dp"
+      android:layout_marginRight="12dp"
+      android:src="@drawable/icon_back"
+      />
+
+
+  <ImageView
+      android:id="@+id/iv_has_connect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="34dp"
+      android:layout_marginTop="64dp"
+      android:src="@drawable/bg_has_connect"
+      />
+
+  <ListView
+      android:id="@+id/lv_has_connect"
+      android:layout_width="match_parent"
+      android:layout_height="160dp"
+      android:layout_alignLeft="@id/iv_has_connect"
+      android:layout_alignRight="@id/iv_has_connect"
+      android:layout_below="@id/iv_has_connect"
+      />
+
+
+  <ImageView
+      android:id="@+id/iv_can_connect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@id/iv_has_connect"
+      android:layout_below="@id/iv_has_connect"
+      android:layout_marginTop="150dp"
+      android:src="@drawable/bg_can_connect"
+      />
+
+
+  <ListView
+      android:id="@+id/lv_can_connect"
+      android:layout_width="match_parent"
+      android:layout_height="160dp"
+      android:layout_alignLeft="@id/iv_has_connect"
+      android:layout_alignRight="@id/iv_has_connect"
+      android:layout_below="@id/iv_can_connect"
+      android:divider="@drawable/icon_divider_line"
+      android:paddingLeft="30dp"
+      />
+
+</RelativeLayout>

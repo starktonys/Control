@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="stark.tony.control.MainActivity"
+    >
+
+  <ImageView
+      android:id="@+id/iv_operation"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="24dp"
+      android:layout_marginTop="25dp"
+      android:src="@drawable/icon_close"
+      />
+
+  <TextView
+      android:id="@+id/tv_control"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="200dp"
+      android:text="继电器控制"
+      android:textColor="@android:color/white"
+      />
+
+  <Button
+      android:id="@+id/btn_auto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_control"
+      android:background="@null"
+      android:text="自动模式"
+      android:textColor="@android:color/white"
+      />
+
+  <com.kyleduo.switchbutton.SwitchButton
+      android:id="@+id/sbtn_control1"
+      android:layout_alignTop="@id/btn_auto"
+      android:layout_alignLeft="@id/tv_control"
+      android:layout_marginRight="24dp"
+      android:layout_width="60dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:checked="false"
+      app:kswTintColor="#47c2d2"
+      style="@style/SwitchButtonStyle"
+      />
+
+  <com.kyleduo.switchbutton.SwitchButton
+      android:id="@+id/sbtn_control2"
+      android:layout_alignLeft="@id/tv_control"
+      android:layout_below="@id/sbtn_control1"
+      android:layout_width="60dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:checked="false"
+      app:kswTintColor="#47c2d2"
+      style="@style/SwitchButtonStyle"
+      />
+
+  <com.kyleduo.switchbutton.SwitchButton
+      android:id="@+id/sbtn_control3"
+      android:layout_alignLeft="@id/tv_control"
+      android:layout_below="@id/sbtn_control2"
+      android:layout_width="60dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:checked="false"
+      app:kswTintColor="#47c2d2"
+      style="@style/SwitchButtonStyle"
+      />
+
+  <com.kyleduo.switchbutton.SwitchButton
+      android:id="@+id/sbtn_control4"
+      android:layout_alignLeft="@id/tv_control"
+      android:layout_below="@id/sbtn_control3"
+      android:layout_width="60dp"
+      android:layout_height="40dp"
+      android:layout_alignParentRight="true"
+      android:checked="false"
+      app:kswTintColor="#47c2d2"
+      style="@style/SwitchButtonStyle"
+      />
+
+</RelativeLayout>
